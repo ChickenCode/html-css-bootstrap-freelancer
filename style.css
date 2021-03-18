@@ -55,24 +55,21 @@ hr {
     display: inline-block;
 }
 
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .green-bkg h1, .green-bkg h4 {
     color: white;
 } 
-
-.green-bkg h4 {
-    margin-bottom: 50px;
-}
-
-.my-img-container img {
-    margin-top: 50px;
-}
 
 hr.darkergray-bkg {
     border: 1.5px solid #2c3e50;
 }
 
-.m-top-50 {
-    margin-top: 50px;
+.mt-0 {
+    margin-top: 0;
 }
 
 .m-top-20 {
@@ -87,10 +84,6 @@ hr.darkergray-bkg {
     margin-bottom: 20px;
 }
 
-.m-bottom-50 {
-    margin-bottom: 50px;
-}
-
 .green-bkg p {
     color: white;
     font-weight: 550;
@@ -100,13 +93,18 @@ svg {
     vertical-align: middle;
 }
 
+
+
 .my-btn {
-    background-color: transparent;
-    border: 1px solid white;
+    color: white;
+    background-color: #1abc9c;
+    border: white 1px solid;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-.btn-default a {
-    color: white;
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: unset;
 }
 
 .btn-default {
@@ -146,17 +144,18 @@ p a {
     color: #1abc9c;
 }
 
-.col-md-4 p,
-.col-md-4 h4,
+.col-sm-4 p,
+.col-sm-4 h4,
 section>p {
     color: white;
 }
 
-section>p {
+.banana {
     font-size: smaller;
     text-align: center;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    color: white;
 }
 
 .navbar-my-style .navbar-toggle {
@@ -167,6 +166,11 @@ section>p {
     background-color: #888888;
 }
 
+@media screen and (max-width: 768px) {
+   .my-xs-m {
+       margin-bottom: 30px;
+   } 
+}
 
 
 
